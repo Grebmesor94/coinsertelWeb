@@ -9,7 +9,7 @@ export const servicesInfo = [
       "Realizamos el diseño e ingeniería de redes microondas y de redes de fibra óptica.",
       "Realizamos inspecciones y generamos informes de ingeniería de detalle para la instalación de nuevos equipos (telecomunicaciones, energía, telemetría, entre otros).",
     ],
-    image: "/network.svg",
+    image: "/public/network.svg",
   },
   {
     title: "Ingeniería de Proyectos",
@@ -23,7 +23,7 @@ export const servicesInfo = [
       "Proyectos con Drones para Evaluación de Torres de Telecomunicaciones.",
       "Proyectos con Drones para para riego de plantaciones.",
     ],
-    image: "/project.svg",
+    image: "/public/project.svg",
   },
   {
     title:
@@ -38,7 +38,7 @@ export const servicesInfo = [
       "Conectores de todo tipo.",
       "Tubería y Escalerillas para Ductería.",
     ],
-    image: "/cables.svg",
+    image: "/public/cables.svg",
   },
 ];
 
