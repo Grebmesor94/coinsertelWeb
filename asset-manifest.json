@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/coinsertelWeb/static/css/main.c655f1c1.css",
-    "main.js": "/coinsertelWeb/static/js/main.73d3e569.js",
+    "main.js": "/coinsertelWeb/static/js/main.ddf5750a.js",
     "static/media/internet.jpg": "/coinsertelWeb/static/media/internet.f3de3e32b285c515b464.jpg",
     "static/media/services.jpg": "/coinsertelWeb/static/media/services.640e0e1ddde82fa4bd8a.jpg",
     "index.html": "/coinsertelWeb/index.html",
     "main.c655f1c1.css.map": "/coinsertelWeb/static/css/main.c655f1c1.css.map",
-    "main.73d3e569.js.map": "/coinsertelWeb/static/js/main.73d3e569.js.map"
+    "main.ddf5750a.js.map": "/coinsertelWeb/static/js/main.ddf5750a.js.map"
   },
   "entrypoints": [
     "static/css/main.c655f1c1.css",
-    "static/js/main.73d3e569.js"
+    "static/js/main.ddf5750a.js"
   ]
 }
