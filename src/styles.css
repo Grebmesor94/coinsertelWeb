@@ -29,8 +29,8 @@ body {
 
 @media screen and (max-width: 480px) {
   body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
     width: 100%;
     height: 100%;
   }
@@ -77,12 +77,6 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
-}
-
-@media screen and (max-width: 480px) {
-  .navbar {
-    width: 320px;
-  }
 }
 
 .brand-info {
@@ -139,6 +133,13 @@ img {
   align-items: center;
   color: white;
   backdrop-filter: blur(30px);
+}
+
+@media screen and (max-width: 480px) {
+  .links {
+    width: 100px;
+    height: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -295,6 +296,17 @@ img {
   background-color: #112d42;
 }
 
+@media screen and (max-width: 480px) {
+  .contact-page {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
 .contact-page::before {
   content: "";
   position: absolute;
@@ -313,6 +325,13 @@ img {
   z-index: 100;
 }
 
+@media screen and (max-width: 480px) {
+  .contact-container {
+    min-width: 320px;
+    top: -100px;
+  }
+}
+
 .contact-info {
   position: absolute;
   top: 40px;
@@ -326,6 +345,14 @@ img {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+  .contact-info {
+    position: relative;
+    top: 50%;
+    height: calc(100% - 20px);
+  }
 }
 
 .contact-info h2 {
@@ -400,17 +427,21 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+  .form-container {
+    top: 25%;
+    min-width: 400px;
+    position: relative;
+    transform: translatey(50%);
+    transform: translateX(-45%);
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .contact-container {
     width: 320px;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 320px;
+    grid-template-columns: 100px;
   }
 }
 
