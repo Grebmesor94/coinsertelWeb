@@ -498,7 +498,9 @@ textarea {
 }
 
 .inputBox textarea:focus ~ label,
-input:focus ~ label {
+input:focus ~ label,
+textarea:valid ~ label,
+input:valid ~ label {
   transform: translateY(-25px);
   font-size: 12px;
   font-weight: 400;
@@ -526,4 +528,106 @@ input:focus ~ label {
 #message {
   resize: none;
   min-height: 120px;
+}
+
+.invisible {
+  display: none;
+}
+
+.profile-card__container {
+  display: flex;
+  min-width: 60%;
+  min-height: 60%;
+  background: linear-gradient(45deg, #00bcd4, #ffeb3b);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+@media screen and (max-width: 420px) {
+  .title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-align: center;
+  }
+  #about-page {
+    height: max-content;
+  }
+  .profile-card__container {
+    height: min-content;
+    flex-direction: column;
+  }
+}
+
+.profile-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: height 0.5s;
+}
+
+.profile-card:hover {
+  height: 400px;
+}
+
+.profile-card__image {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.profile-card:hover .profile-card__image {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-card__content {
+  position: absolute;
+  top: 235px;
+  width: 100%;
+  height: 40px;
+  padding: 0 30px;
+  text-align: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.profile-card:hover .profile-card__content {
+  transform: translateY(-100px);
+  height: 250px;
+}
+
+.profile-card__title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  font-weight: 500;
 }

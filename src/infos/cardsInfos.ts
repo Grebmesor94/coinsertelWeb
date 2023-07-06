@@ -47,10 +47,12 @@ export const profileInfo = [
     title: "Misión",
     description:
       "Nacimos para ofrecerte innovación en telecomunicaciones, hemos evolucionado para llevarte la mejor oferta de productos y servicios con gran variedad de soluciones basados en protocolo IP, con una sólida cobertura a nivel nacional y la mejor atención personalizada.",
+    image: "mision.png",
   },
   {
     title: "Visión",
     description:
       "Convertirnos en la empresa líder en soluciones tecnológicas a nivel nacional e internacional.",
+    image: "vision.png",
   },
 ];
