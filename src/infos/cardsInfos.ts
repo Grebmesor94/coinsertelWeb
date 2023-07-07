@@ -53,6 +53,6 @@ export const profileInfo = [
     title: "Visión",
     description:
       "Convertirnos en la empresa líder en soluciones tecnológicas a nivel nacional e internacional.",
-    image: "vision.png",
+    image: "vision.jpg",
   },
 ];
