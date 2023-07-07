@@ -7,14 +7,14 @@ import { ServicesPage } from "./pages/ServicesPage";
 
 export const App = () => {
   return (
-    <>
+    <div className="app-container">
       <HomePage />
       <Navbar />
       <AboutPage />
       <ServicesPage />
       <ContactPage />
       <Footer />
-    </>
+    </div>
   );
 };
 
